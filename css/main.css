@@ -1,0 +1,160 @@
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* 창문 영역 => last_ment window와 클래스 공유*/
+.main_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.window_area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.window_area > div{
+    padding-bottom: 100px;
+    width: 900px;
+    transition: 1s;
+}
+.window_area .My_name, .window_area .window_text{
+    width: 100%;
+    font-size: 5rem;
+}
+.window_area .My_name p{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.window_area .window_text{
+    text-align: right;
+}
+.window_frames{
+    position: relative;
+}
+.window_frames img{
+    width: 100%;
+    display: block;
+}
+.window_frames .window{
+    position: absolute;
+    width: 40%;
+    left: 10.4%;
+    top: 3.3%;
+    cursor: pointer;
+}
+/* //창문 영역 */
+
+
+/* 이미지 영역 */
+.image_area{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.image_area .image_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image_area .image_wrap .image_text{
+    font-size: 3rem;
+    width: calc(100% - 95px);
+    max-width: 1825px;
+    height: calc(100% - 95px);
+    position: relative;
+}
+.image_area .image_wrap .image_text p{
+    position: absolute;
+    right: 0;
+    top: -37px;
+}
+.image_area .image_move{
+    width: calc(100% - 95px);
+    max-width: 1825px;
+    height: calc(100% - 95px);
+    overflow: hidden;
+    border-radius: 0 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.image_area .image_move > div{
+    width: calc(100% + 430px);
+    height: calc(100% + 350px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.image_area .image_move > div .image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 1500px;
+    transition: 3.5s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.image_area .image_move > div .pos_top{
+    top: 0;
+    min-width: 1900px;
+}
+.image_area .image_move > div .image img{
+    display: block;
+    width: 100%;
+}
+/* //이미지 영역 */
+
+.text_ani_01 span{
+    display: inline-block;
+}
+.text_area{
+    font-size: 8rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.text_ani_01{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15rem;
+}
+.text_ani_01 p{
+    transform: translateY(-85%);
+}
+.text_ani_02{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.text_ani_02 p{
+    bottom: 50%;
+    position: absolute;
+}
+.text_ani_02 p span{
+    display: inline-block;
+}
+.a0{
+    z-index: 3;
+}
+.a1{
+    z-index: 2;
+}
+.a2{
+    z-index: 1;
+}
+
+

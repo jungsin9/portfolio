@@ -1,0 +1,46 @@
+footer{
+    height: 100vh;
+    width: 100%;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+footer img{
+    width: 10%;
+    max-width: 200px;
+}
+footer > div{
+    width: 90%;
+    margin: 0 auto;
+}
+.last_information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.last_information div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+footer div:not(.last_information){
+    display: flex;
+    justify-content: space-between;
+}
+.flower img:nth-child(2n-1){
+    transform: translateY(-60px);
+}
+.cloud img:nth-child(2n){
+    transform: translateY(60px);
+}
+.thank{
+    font-size: 20rem;
+}

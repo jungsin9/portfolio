@@ -1,0 +1,69 @@
+#last_ment{
+    width: 100%;
+    padding: 300px 0;
+    font-size: 12rem;
+}
+#last_ment > div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#last_ment .pos_left{
+    width: 70%;
+}
+#last_ment .pos_right{
+    width: 28%;
+}
+
+#last_ment .pos_left > div{
+    height: 100vh;
+}
+
+#last_ment .pos_left .left_top{
+    padding: 500px 0 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#last_ment .pos_left .left_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8rem;
+}
+#last_ment .pos_left .left_bottom > div{
+    max-width: 900px;
+}
+
+#last_ment .pos_right{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    gap: 8%;
+}
+#last_ment .pos_right div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+#last_ment .pos_right div img{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+}
+#last_ment .pos_right .left{
+    align-items: start;
+    padding-bottom: 10vh;
+}
+#last_ment .pos_right .right{
+    align-items: end;
+    padding-top: 10vh;
+}

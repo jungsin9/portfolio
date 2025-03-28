@@ -1,0 +1,200 @@
+#over{
+    overflow: hidden;
+    width: 100%;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.about_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100vh;
+}
+.about_bg::after{
+    display: block;
+    content: "";
+    position: absolute;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.about_bg img{
+    width: 10vw;
+    max-width: 200px;
+    position: absolute;
+    transition: 0.5s cubic-bezier(0.5, 1, 0.89, 1);;
+}
+.about_wrap{
+    font-size: 3.5rem;
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.about_wrap > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+.about_wrap > div > div{
+    width: 1012px;
+}
+.about_wrap ul{
+    height: 375px;
+    border: 5px solid #000;
+    border-radius: 0 30px 30px 30px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.about_wrap ul li{
+    width: 100%;
+    
+}
+.about_wrap ul li > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_wrap ul li > div span{
+    display: block;
+}
+div.profile > div{
+    width: 658px;
+}
+
+.profile ul{
+    height: 500px;
+    padding: 0 5%;
+    gap: 25px;
+}
+.profile ul li:first-child div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 55px;
+}
+.profile ul li:first-child span:nth-child(2){
+    font-size: 5.5rem;
+}
+
+.sk_lc{
+    gap: 30px;
+}
+.skill ul{
+    height: 180px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill ul li{
+    width: auto;
+}
+.skill ul li div{
+    flex-direction: column;
+    gap: 20px;
+}
+.license ul{
+    height: 120px;
+}
+
+.career ul{
+    gap: 55px;
+}
+.career ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.career ul li div:first-child{
+    position: relative;
+}
+.career ul li div:first-child::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    bottom: -11px;
+}
+.career ul li p{
+    font-size: 3rem;
+}
+
+.education ul{
+    gap: 30px;
+}
+.education ul li{
+    position: relative;
+}
+.education ul li:not(:last-child)::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+.education ul li > div{
+    flex-direction: column;
+    gap: 8px;
+}
+.education ul li > div div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    font-size: 30px;
+}
+.education ul li > div > span{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.svg_color_w{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(137deg) brightness(103%) contrast(101%);
+}
+.svg_color_b{
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(352deg) brightness(99%) contrast(102%);
+}
+.svg_none{
+    display: none;
+}
+.svg_block{
+    display: block;
+}

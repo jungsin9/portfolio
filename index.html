@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Minseong Portfolio</title>
+    <link rel="icon" href="./img/Minseong_faivcon-12.png">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/works.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/last_ment.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> <!--lenis 스크롤 스무쓰-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+<body>
+
+    <div id="nav">
+        <div>
+            <h1>
+                <a href="#">
+                    <img class="svgs" src="./img/logo.svg" alt="logo" loading="lazy">
+                </a>
+            </h1>
+            <ul>
+                <li><a href="#" data-target="text_area">A Thinker</a></li>
+                <li><a href="#" data-target="over">About Me</a></li>
+                <li><a href="#" data-target="works">Works</a></li>
+            </ul>
+            <div class="time">
+                <span>KST</span>
+                <div>
+                    <span class="hr">00</span>
+                    <span>:</span>
+                    <span class="min">00</span>
+                    <span>:</span>
+                    <span class="sec">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="main"><!--메인-->
+        <div class="main_wrap"> <!--메인 영역-->
+            <div class="window_area"> <!--메인 창문 영역-->
+                <div>
+                    <div class="My_name"> <!--메인 이름 영역-->
+                        <p class="color">Kim MinSeong</p>
+                    </div>
+                    <div class="window_frames">
+                        <div id="window" class="window"> <!--메인 창문 이미지 영역-->
+                        </div>
+                    </div>
+                    <div class="window_text"> <!--메인 문구 영역-->
+                        <p class="color">Web Publisher Portfolio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image_area none"> <!--메인 이미지 영역-->
+                <div class="image_wrap"> <!--메인 이미지 영역-->
+                    <div class="image_text"> <!--메인 이미지 텍스트 영역-->
+                        <p class="color"></p>
+                    </div>
+                    <div class="image_move"> <!--메인 이미지 영역(overflow:hidden)-->
+                        <div> <!--메인 이미지 분할 영역-->
+                            <div class="image pos_top"><!--메인 이미지 분할 01-->
+                            </div>
+                            <div class="image"><!--메인 이미지 분할 02-->
+                            </div>
+                            <div class="image"><!--메인 이미지 분할 03-->
+                            </div>
+                            <div class="image"><!--메인 이미지 분할 04-->
+                            </div>
+                            <div class="image"><!--메인 이미지 분할 05-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="text_area" class="color text_area">
+        <div class="text_ani_01">
+            <p class="text_ani">A thinker</p>
+        </div>
+        <div class="text_ani_02">
+            <p class="a0">이렇게 만들면 어떨까?</p>
+            <p class="a1">생각한 모든것을흥미롭게 구현하고싶은</p>
+            <p class="a2">김민성 입니다.</p>
+        </div>
+    </section>
+    
+    <section id="over">
+        <div id="about">
+            <div class="about_bg">
+                    <img class="svgs about_img_a" src="./img/about/cloud_a.svg" alt="cloud_a" loading="lazy">
+                    <img class="svgs about_img_b" src="./img/about/cloud_b.svg" alt="cloud_b" loading="lazy">
+                    <img class="svgs about_img_c" src="./img/about/moon.svg" alt="moon/sun" loading="lazy">
+                    <img class="svgs about_img_d" src="./img/about/flower_a.svg" alt="flower_a/star_a" loading="lazy">
+                    <img class="svgs about_img_e" src="./img/about/flower_b.svg" alt="flower_b/star_b" loading="lazy">
+                    <img class="svgs about_img_f about_img_switch" src="./img/about/ring.svg" alt="ring" loading="lazy">
+                    <img class="svgs about_img_g about_img_switch" src="./img/about/planet.svg" alt="planet" loading="lazy">
+            </div>
+            <div class="about_wrap">
+                <div class="profile">
+                    <div>
+                        <h2 class="color">Profile</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>NAME</span>
+                                    <span>김민성</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>AGE</span>
+                                    <span>1997.03.28(29)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>ADRESS</span>
+                                    <span>서울시 중랑구 중화2동</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>PHONE</span>
+                                    <span>010.3811.4724</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>E-MAIL</span>
+                                    <span>startmns328@naver.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sk_lc">
+                    <div class="skill">
+                        <h2 class="color">Skill</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>html</span>
+                                    <span>85%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>css</span>
+                                    <span>90%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>javascript</span>
+                                    <span>60%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>jquery</span>
+                                    <span>75%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>xd</span>
+                                    <span>75%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>Ps/Ai</span>
+                                    <span>85%</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="license">
+                        <h2 class="color">License</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>웹디자인 기능사</span>
+                                    <span>2021.04.30</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="career">
+                    <div>
+                        <h2 class="color">Career</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>주식회사 씨케이앤비</span>
+                                    <span>2022.01.18~2024.06.30</span>
+                                </div>
+                                <div>
+                                    <p>Image QR Code와 연동된 Landing Page의 디자인 제작을 주로 하였으며,<br>
+                                        명함/베너/홈페이지 제작 등의 업무를 담당했습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>마트만</span>
+                                    <span>2015.11.02~2017.01.23</span>
+                                </div>
+                                <div>
+                                    <p>간단한 이미지편집업무를 하였습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education">
+                    <div>
+                        <h2 class="color">Education</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <span>2021.07.15~2022.01.12</span>
+                                        <span>(그린컴퓨터 아트학원)</span>
+                                    </div>
+                                    <span>[디지털디자인]UI/UX반응형 웹디자인&퍼블리셔 실무전문과정</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div>
+                                        <span>2021.09.09~2021.10.14</span>
+                                        <span>(그린컴퓨터 아트학원)</span>
+                                    </div>
+                                    <span>[UI/UX반응형웹코딩]자바스크립트&제이쿼리 기초실무활용</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div>
+                                        <span>2018.04.30~2018.08.03</span>
+                                        <span>(그린컴퓨터 아트학원)</span>
+                                    </div>
+                                    <span>디지털디자인(반응형웹디자인)양성과정</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="color">
+        <div class="works_wrap color">
+            <h2>Works</h2>
+            <ul>
+                <li>
+                    <div>
+                        <div class="works_name">
+                            <span>히든태그 홈페이지 개편</span>
+                            <span>(24.03.26~24.06.10)</span>
+                        </div>
+                        <div class="in_line">
+                            <div class="works_percent">
+                                <div>
+                                    <span>디자인</span>
+                                    <span>(100%)</span>
+                                </div>
+                                <div>
+                                    <span>퍼블리싱</span>
+                                    <span>(90%)</span>
+                                </div>
+                            </div>
+                            <div class="works_tool">
+                                <span>XD / HTML / CSS / jquery</span>
+                            </div>
+                        </div>
+                        <div class="works_coment">
+                            <p>메인 디자이너로써 자사의 홈페이지를 디자인 하였으며, <br>모든 페이지에 대한 퍼블리싱 작업을 담당하여 작업하였습니다.</p>
+                        </div>
+                        <div class="works_link">
+                            <span>
+                                <a class="color" href="https://www.hiddentag.com/index.jsp" target="_blank">보러가기</a>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="works_name">
+                            <span>브랜드 관제 프로젝트 참여</span>
+                            <span>(23.12.04~24.12.15)</span>
+                        </div>
+                        <div class="in_line">
+                            <div class="works_percent">
+                                <div>
+                                    <span>디자인</span>
+                                    <span>(100%)</span>
+                                </div>
+                                <div>
+                                    <span>퍼블리싱</span>
+                                    <span>(70%)</span>
+                                </div>
+                            </div>
+                            <div class="works_tool">
+                                <span>XD / HTML / CSS / jquery</span>
+                            </div>
+                        </div>
+                        <div class="works_coment">
+                            <p>다수의 개발자들과 협업하며 관제 시스템 데이터를 가독성 있게 디자인하고, <br>퍼블리싱 작업을 수행하였습니다.</p>
+                        </div>
+                        <div class="works_link">
+                            <span><a class="color" href="https://hiddentag.biz/newControl.ht" target="_blank">사이트 내 이미지 참고</a></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="works_name">
+                            <span>히든태그 비즈 홈페이지 프로젝트 참여</span>
+                            <span>(23.09.18~24.10.24)</span>
+                        </div>
+                        <div class="in_line">
+                            <div class="works_percent">
+                                <div>
+                                    <span>디자인</span>
+                                    <span>(70%)</span>
+                                </div>
+                                <div>
+                                    <span>퍼블리싱</span>
+                                    <span>(95%)</span>
+                                </div>
+                            </div>
+                            <div class="works_tool">
+                                <span>XD / HTML / CSS / jquery</span>
+                            </div>
+                        </div>
+                        <div class="works_coment">
+                            <p>다수의 디자이너와 협업한 프로젝트이며, <br>기존 코드를 참고하여 모든 페이지의 퍼블리싱 작업을 직접 수행하였습니다.</p>
+                        </div>
+                        <div class="works_link">
+                            <span><a class="color" href="https://hiddentag.biz/" target="_blank">보러가기</a></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="works_name">
+                            <span>portfolio</span>
+                            <span>(24.12~24.2)</span>
+                        </div>
+                        <div class="in_line">
+                            <div class="works_percent">
+                                <div>
+                                    <span>디자인</span>
+                                    <span>(100%)</span>
+                                </div>
+                                <div>
+                                    <span>퍼블리싱</span>
+                                    <span>(100%)</span>
+                                </div>
+                            </div>
+                            <div class="works_tool">
+                                <span>XD / HTML / CSS / jquery</span>
+                            </div>
+                        </div>
+                        <div class="works_coment">
+                            <p>gsap과 lenis 라이브러리를 사용하여 다채로운 애니메이션 효과를 주었으며,<br>풍경과 시간(아침:6시 이후, 점심:12시 이후, 저녁:18시 이후)을 컨셉화 하여<br>시간별로 창문 밖 배경과 배경 색상이 달라지도록 하였습니다.<br>마지막으로 창문을 활용한 상호작용을 통하여<br>해당 사이트에 오래 머무를수 있도록 기획하여 작업했습니다.</p>
+                        </div>
+                        <div class="works_link">
+                            <span><a class="color" href="https://jungsingt.cafe24.com/portfolio/" target="_blank">보러가기</a></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="last_ment" class="color">
+        <div>
+            <div class="pos_left">
+                <div class="left_top">
+                    <p>I think<br> the shaking window <br>can be opened</p>
+                    <!-- <p>With deep thoughts<br> and <br>good ideas</p> -->
+                </div>
+                <div class="left_bottom">
+                    <div class="window_frames">
+                        <div id="end_window" class="window"> <!--메인 창문 이미지 영역-->
+                        </div>
+                    </div>
+                    <div>
+                        <p>Try opening the window.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pos_right">
+                <div class="left">
+                    <img class="svgs about_img_c" src="./img/about/moon.svg" alt="moon/sun" loading="lazy">
+                    <img class="svgs about_img_a" src="./img/about/cloud_a.svg" alt="cloud_a" loading="lazy">
+                    <img class="svgs about_img_d roll" src="./img/about/flower_a.svg" alt="flower_a/star_a" loading="lazy">
+                </div>
+                <div class="right">
+                    <img class="svgs about_img_d roll" src="./img/about/flower_a.svg" alt="flower_a/star_a" loading="lazy">
+                    <img class="svgs about_img_b" src="./img/about/cloud_b.svg" alt="cloud_b" loading="lazy">
+                    <img class="svgs about_img_e roll_opp" src="./img/about/flower_b.svg" alt="flower_b/star_b" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="color">
+        <div class="flower">
+            <img class="svgs about_img_d" src="./img/about/flower_a.svg" alt="flower_a/star_a" loading="lazy">
+            <img class="svgs about_img_e" src="./img/about/flower_b.svg" alt="flower_b/star_b" loading="lazy">
+        </div>
+        <div class="last_information">
+            <p class="thank">Thank you</p>
+            <div>
+                <p><span>E-MAIL : </span><span>startmns328@naver.com</span></p>
+                <p><span>PHONE : </span><span>010.3811.4724</span></p>
+            </div>
+            <p>©2025 Kim Minseong. All Rights Reserved.</p>
+        </div>
+        <div class="cloud">
+            <img class="svgs about_img_a" src="./img/about/cloud_a.svg" alt="cloud_a" loading="lazy">
+            <img class="svgs about_img_b" src="./img/about/cloud_b.svg" alt="cloud_b" loading="lazy">
+        </div>
+    </footer>
+
+    <!-- 사이즈 테스트 용 -->
+    <!-- <div class="widaaa color">
+        <p></p>
+    </div>
+    <style>
+        .widaaa{
+            position: fixed;
+            right: 0;
+            top: 0;
+            font-size: 3rem;
+        }
+    </style> -->
+    <!-- //사이즈 테스트 용 -->
+    <!-- 1180px -->
+    <!-- 820px -->
+    <!-- 809px -->
+    <!-- 412px -->
+</body>
+<script src="./js/byulbitcha_font.js"></script>
+<script src="./js/Lenis.js"></script>
+<script src="./js/time.js"></script>
+<script src="./js/window.js"></script><!-- 첫번째 섹션에 해당함 -->
+<script src="./js/image.js"></script><!-- 첫번째 섹션에 해당함 -->
+<script src="./js/text_ani.js"></script><!-- 두번째 섹션에 해당함 -->
+<script src="./js/about.js"></script><!-- 세번째 섹션에 해당함 -->
+<script src="./js/works.js"></script><!-- 네번째 섹션에 해당함 -->
+<script src="./js/last_window.js"></script><!-- 다섯번째 섹션에 해당함 -->
+<script src="./js/foot.js"></script>
+<script src="./js/nav.js"></script>
+
+<script>
+// let sdd = $(window).innerWidth();
+// $(".widaaa").html(sdd);
+</script>
+</html>

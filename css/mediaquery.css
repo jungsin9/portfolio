@@ -1,0 +1,283 @@
+/* <!-- 1180px --> 가로 시
+    <!-- 820px -->
+    <!-- 809px --> 가로 시
+    <!-- 413px --> */
+
+
+@media (max-width: 1800px){
+    .about_bg img{
+        width: 8vw;
+    }
+}
+
+
+@media (max-width: 1180px){
+    #nav > div h1 a{
+        width: 120px;
+    }
+    #nav ul,#nav .time{
+        font-size: 2.5rem;
+    }
+    #nav > div h1{
+        width: 150px;
+    }
+    #nav ul{
+        width: 350px;
+        padding: 0 10px;
+        height: 30px;
+    }
+    #nav .time{
+        width: 150px;
+        height: 30px;
+    }
+    #nav .time div span:nth-child(2n -1){
+        width: 20px;
+    }
+    .window_area > div{
+        width: 60%;
+    }
+    .window_area .My_name, .window_area .window_text{
+        font-size: 4rem;
+    }
+    .image_area .image_wrap .image_text{
+        /* font-size: 3rem; */
+    }
+    .image_area .image_wrap .image_text p{
+        top: -25px;
+    }
+    .image_area .image_move{
+        height: calc(100% - 120px);
+    }
+    .image_area .image_move > div .image{
+        min-width: 2000px;
+    }
+    .text_area{
+        font-size: 6rem;
+    }
+    .text_ani_01{
+        font-size: 12rem;
+    }
+    .profile ul li:first-child span:nth-child(2){
+        font-size: 5rem;
+    }
+    .about_wrap{
+        font-size: 3rem;
+    }
+    .about_wrap > div > div{
+        width: 700px;
+    }
+    .about_wrap ul{
+        padding: 0 7%;
+        height: 320px;
+    }
+    .sk_lc{
+        gap: 20px;
+    }
+    .skill ul{
+        height: 160px;
+    }
+    .license ul{
+        height: 110px;
+    }
+    .education ul li > div div{
+        font-size: 2.5rem;
+    }
+    .career ul li p{
+        font-size: 2.5rem;
+    }
+    div.profile > div{
+        width: 500px;
+    }
+    .profile ul{
+        height: 400px;
+        gap: 15px;
+    }
+    #works{
+        font-size: 3rem;
+    }
+    .works_wrap{
+        width: 700px;
+    }
+    .works_name span:last-child, .in_line, .works_link{
+        font-size: 2rem;
+    }
+    #last_ment{
+        font-size: 7vw;
+    }
+    #last_ment .pos_left .left_bottom{
+        font-size: 6.5vw;
+    }
+}
+
+@media (max-width: 820px) and (max-aspect-ratio: 1/1){
+    .image_area .image_move > div .image{
+        min-width: 2500px;
+    }
+    #nav > div{
+        width: 85%;
+    }
+    #last_ment .pos_left .left_bottom > div{
+        margin-right: 4vw;
+    }
+}
+
+@media (max-width: 413px){
+    .window_area .My_name, .window_area .window_text{
+        font-size: 4vw;
+    }
+    #nav{
+        bottom: 30px;
+    }
+    #nav > div h1 a {
+        width: 40px;
+    }
+    
+    #nav ul, #nav .time{
+        font-size: 1.2rem;
+    }
+    #nav > div h1{
+        width: 30%;
+    }
+    #nav ul, #nav .time{
+        width: 30%;
+        height: 20px;
+    }
+    #nav ul{
+        display: none;
+    }
+    .image_area .image_move{
+        width: 90%;
+        height: 94%;
+    }
+    .image_area .image_move > div .image{
+        min-width: 1300px;
+    }
+    .image_area .image_move > div .pos_top{
+        min-width: 1500px;
+        top: 0;
+    }
+    .image_area .image_wrap .image_text{
+        font-size: 4vw;
+        width: 90%;
+        height: 94%;
+    }
+    .image_area .image_wrap .image_text p{
+        top: -21px;
+    }
+    .window_area > div{
+        width: 80%;
+        padding-bottom: 50px
+    }
+
+    .text_ani_01{
+        font-size: 17vw;
+    }
+    .text_area{
+        font-size: 7vw;
+    }
+
+    div.profile > div{
+        width: 90%;
+    }
+    
+    .profile ul li:first-child div{
+        padding-bottom: 10vw;
+    }
+    .about_wrap{
+        font-size: 5vw;
+    }
+    .profile ul li:first-child span:nth-child(2){
+        font-size: 10vw;
+    }
+    .about_wrap > div > div{
+        width: 90%;
+    }
+    .about_wrap ul{
+        padding: 0 5vw;
+        height: 58vw;
+    }
+    .sk_lc{
+        gap: 10vw;
+    }
+    .skill ul li div{
+        gap: 3vw;
+    }
+    .skill ul{
+        height: 25vw;
+    }
+    .license ul{
+        height: 18vw;
+    }
+    .career ul li{
+        gap: 3vw;
+    }
+    .career ul li div:first-child::after{
+        bottom: -1.5vw;
+    }
+    .career ul li p{
+        font-size: 4.5vw;
+    }
+    .career ul{
+        gap: 8vw;
+    }
+    .education ul li > div div{
+        font-size: 4vw;
+    }
+    .education ul{
+        gap: 4vw;
+    }
+    .education ul li:not(:last-child)::after{
+        bottom: -2vw;
+    }
+    .education ul li > div{
+        gap: 1vw;
+    }
+    .profile ul{
+        height: 80vw;
+        gap: 3vw;
+    }
+    #works{
+        font-size: 4vw;
+    }
+    .works_wrap{
+        width: 90%;
+    }
+    .works_name{
+        padding-bottom: 1vw;
+    }
+    .works_name span:last-child, .in_line, .works_link{
+        font-size: 3vw;
+    }
+    .in_line{
+        padding: 2vw;
+    }
+    .works_coment{
+        padding: 10vw 0;
+    }
+    .works_link{
+        font-size: 5vw;
+    }
+    #last_ment .pos_left .left_top{
+        padding: 30vw 0 20vw 0;
+    }
+    footer{
+        font-size: 4vw;
+        gap: 10vw;
+    }
+    .thank{
+        font-size: 15vw;
+    }
+    .flower img:nth-child(2n-1){
+        transform:translateY(-8vw);
+    }
+    .cloud img:nth-child(2n){
+        transform:translateY(8vw);
+    }
+    .last_information div{
+        gap: 10vw;
+    }
+    .last_information{
+        gap: 5vw;
+    }
+}
+
